@@ -33,11 +33,11 @@ const Skills = () => {
       >
         {skillsSymbols.map((skill) => {
           return (
-            <m.div className="skill" variants={staggerChildItem}>
+            <m.div className="skill" variants={staggerChildItem} whileHover={{translateY: "-10px", transition: {duration: 0.5}}}>
               <img
                 className="skill_Img"
                 src={skill.img}
-                alt={`${skill.name}`}
+                alt={`${skill.name}`} 
               />
               <h3>{skill.name}</h3>
               {/* <m.div >

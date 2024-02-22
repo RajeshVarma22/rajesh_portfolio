@@ -62,11 +62,12 @@
     align-items: center;
     flex-direction: column;
     border-radius: 10%;
-    background: linear-gradient(
-      350deg,
-      #3778ae,
-      #ffd7489a
-    ); 
+    // background: linear-gradient(
+    //   350deg,
+    //   #3778ae,
+    //   #ffd7489a
+    // ); 
+    background-color: $card_bg;
     border: 1px solid $sky_blue_color;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -74,8 +75,12 @@
     overflow: hidden;
 
     &:hover {
-      background-color: $card_bg;
-      transform: translateY(-10px);
+      background-color: rgb(0, 60, 124);
+      color: white ;
+      h3 {
+        color: white;
+      }
+
     }
 
     .skill_Img {
