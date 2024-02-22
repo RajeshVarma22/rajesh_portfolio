@@ -1,60 +1,5 @@
 @import "../SCSS/variables.scss";
 
-// #Skills {
-//   height: 90vh;
-//   background-color: $dark_theme_color;
-
-//   &_heading {
-//     color: $sky_blue_color;
-//     font-weight: bolder;
-//     font-size: xx-large;
-//     text-align: center;
-//     width: fit-content;
-//     margin: 0px auto;
-//     margin-bottom: 30px;
-//     border-radius: 5px;
-//     background: linear-gradient(
-//       to left,
-//       $animate_slide_bg 50%,
-//       transparent 50%
-//     );
-//     background-size: 200% 100%;
-//     background-position: right bottom;
-//     transition: all 0.4s ease-out;
-//     margin-bottom: 5px;
-//     overflow: hidden;
-//   }
-
-//   &_container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-wrap: wrap;
-
-//     .skill {
-//       //   width: 250px;
-//       margin: 20px;
-//       padding: 20px;
-//       border: 1px solid red;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       flex-direction: column;
-
-//       &_Img {
-//         height: 150px;
-//         display: block;
-//         margin: auto;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 1350px) {
-//   #Skills {
-//     height: fit-content;
-//   }
-// }
 
 #Skills {
   text-align: center;
@@ -121,12 +66,12 @@
       350deg,
       #3778ae,
       #ffd7489a
-    ); /* Example colors */
+    ); 
     border: 1px solid $sky_blue_color;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 0 15px $sky_blue_color; /* Glowing effect on hover */
+    box-shadow: 0 0 15px $sky_blue_color; 
+    overflow: hidden;
 
     &:hover {
       background-color: $card_bg;

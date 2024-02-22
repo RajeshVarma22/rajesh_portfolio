@@ -2,8 +2,11 @@ import React from "react";
 import "./skills.scss";
 import skillsSymbols from "./skillsLogos";
 import { motion as m } from "framer-motion";
-import { parentVarints, stagger, staggerChildItem } from "../Animate/parentVarients";
-import { motion, AnimatePresence } from "framer-motion";
+import {
+  parentVarints,
+  stagger,
+  staggerChildItem,
+} from "../Animate/parentVarients";
 
 const Skills = () => {
   return (
@@ -30,14 +33,16 @@ const Skills = () => {
       >
         {skillsSymbols.map((skill) => {
           return (
-            <div className="skill">
-              <m.img  variants={staggerChildItem} initial="hidden" whileInView="show"
+            <m.div className="skill" variants={staggerChildItem}>
+              <img
                 className="skill_Img"
                 src={skill.img}
                 alt={`${skill.name}`}
               />
               <h3>{skill.name}</h3>
-            </div>
+              {/* <m.div >
+              </m.div> */}
+            </m.div>
           );
         })}
       </m.div>
