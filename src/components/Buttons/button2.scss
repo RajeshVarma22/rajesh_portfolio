@@ -1,0 +1,49 @@
+/* From uiverse.io by @alshahwan */
+.btn-r {
+  margin-right: 30px;
+  background-color: #fff;
+  border: 1px solid rgb(0, 133, 150);
+  padding: 5px;
+  position: relative;
+  width: 7.2em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 1em;
+  font-weight: bolder;
+}
+
+.btn-r p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.2em;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  color: rgb(0, 133, 150);
+}
+
+.btn-r svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff;
+}
+
+.btn-r:hover p {
+  left: 0.6em;
+  color: #fff;
+}
+
+.btn-r:hover svg {
+  opacity: 1;
+}
+
+.btn-r:hover {
+  background-color: rgb(0, 133, 150) !important;
+}

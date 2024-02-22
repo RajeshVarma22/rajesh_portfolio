@@ -1,0 +1,133 @@
+@import "../SCSS/variables.scss";
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes oscillatoryMotion {
+  0% {
+    transform: translateY(0);
+    border-radius: 51% 49% 47% 53% / 43% 53% 47% 57%;
+  }
+  25% {
+    border-radius: 51% 49% 47% 53% / 51% 42% 58% 49%;
+  }
+  50% {
+    border-radius: 56% 44% 53% 47% / 45% 51% 49% 55%;
+  }
+  75% {
+    border-radius: 45% 55% 43% 57% / 48% 41% 59% 52%;
+  }
+  100% {
+    transform: translateY(25px);
+    border-radius: 51% 49% 47% 53% / 43% 53% 47% 57%;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+#Home {
+  background-color: $dark_theme_color;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+
+  #myMainImage {
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: -11px 11px 22px #03080c, 11px -11px 22px #091c2a;
+    animation: oscillatoryMotion 5s ease-in-out 2s infinite alternate;
+    border: 2px solid $sky_blue_color;
+  }
+
+  #Name {
+    .childElements {
+      width: fit-content;
+      margin: 20px 0px;
+      color: white;
+      padding-right: 0px;
+      border-radius: 5px;
+      background: linear-gradient(
+        to left,
+        rgb(0, 225, 255) 50%,
+        transparent 50%
+      );
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.8s ease-out;
+      margin-bottom: 5px;
+      overflow: hidden;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .buttonsContainer {
+      margin-top: 50px;
+      display: flex;
+    }
+  }
+}
+
+.wave {
+  animation-name: wave-animation;
+  margin-left: 10px;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 550px) {
+  #myMainImage {
+    height: 200px;
+  }
+
+  #Name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .childElements {
+      padding-right: 0px;
+    }
+  }
+}
