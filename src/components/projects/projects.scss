@@ -8,6 +8,14 @@
   background-color: $dark_theme_color;
   overflow: hidden;
 
+  #pojects_title{
+    padding: 5px 10px;
+    color: $sky_blue_color;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    border-bottom: 3px solid red;
+  }
+
   #desktop {
     position: relative;
   }

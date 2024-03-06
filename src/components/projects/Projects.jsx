@@ -8,6 +8,7 @@ import Projects_s_m_l from "./Projects_s_m_l.jsx";
 const Projects = () => {
   return (
     <section id="projects">
+      <h1 id="pojects_title">Projects</h1>
       {/* <Carousel images={images}/> */}
 
       {/* <div id ="desktop">

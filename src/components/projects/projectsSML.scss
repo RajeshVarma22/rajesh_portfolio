@@ -10,22 +10,64 @@
 
   .projectCard {
     width: 41.666666667%;
-    background-color: $card_bg;
+    background-color: #060b10;
     padding: 1em;
-    border: 2px solid $dark_theme_similar_color;
+    border: 2px solid #060b10;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
-    
-    
+    border-radius: 24px;
+
     .headCard {
       width: 100%;
       height: auto;
+      border-radius: inherit;
 
-      img{
+      img {
         width: 100%;
         height: auto;
+        border: 2px solid $card_bg;
+        border-radius: 16px;
+      }
+    }
+
+    .bodycard {
+      margin-top: 10px;
+      color: white;
+
+      .skills_used {
+        display: flex;
+
+        .skills_names {
+          background-color: #ac5f5f;
+          margin-right: 10px;
+          padding: 5px 10px;
+          border-radius: 20px;
+          font-size: smaller;
+        }
+      }
+      .project_title_details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .project_title {
+          // text-align: center;
+          margin-top: 10px;
+          font-size: x-large;
+          font-weight: bold;
+        }
+
+        .project_demo {
+          .btns {
+            color: #fafafc;
+            margin-left: 10px;
+            padding: 0.5em 1em;
+            border-radius: 24px;
+            background-color: #ac5f5f;
+            border: none;
+            outline: none;
+          }
+        }
       }
     }
   }
