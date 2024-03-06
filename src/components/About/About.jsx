@@ -30,13 +30,28 @@ const About = () => {
       </div>
       <div id="experience">
         <img src={experience} className="experience_img" alt="experience_img" />
-        <p className="deatils">
-          Dedicated MERN Stack Developer with proficiency in HTML, CSS, SASS,
-          JavaScript, Bootstrap, ReactJs, Redux, NodeJs, ExpressJs and, Python.
-          Committed to creating user-centric web experiences. Holds a Bachelor's
-          degree in Computer Science. Enthusiastic about contributing skills to
-          dynamic projects.
-        </p>
+        <div className="deatils">
+          <div className="exp_position">
+            <h1>Junior Frontend Web Developer at IRIS.</h1>
+            <h3>June 2023 - Jan 2024</h3>
+          </div>
+          <p>
+            <span>&minus;</span> Developed UI using ReactJs, SASS/SCSS, HTML,
+            CSS, JavaScript, Bootstrap.
+          </p>
+          <p>
+            <span>&minus;</span> Collaborated with senior team members to create
+            innovative and visually appealing web solutions.
+          </p>
+          <p>
+            <span>&minus;</span> Gained practical experience in real-world web
+            development practices.
+          </p>
+          <p>
+            <span>&minus;</span> Developed a keen understanding of professional
+            web development practices.
+          </p>
+        </div>
       </div>
     </section>
   );

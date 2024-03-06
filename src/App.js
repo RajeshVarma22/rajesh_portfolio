@@ -13,10 +13,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
-      {/* <About /> */}
+      <About />
       <Skills /> 
-      {/* <Test /> */}
       <Projects />
+      {/* <Test /> */}
       {/* <Carousel1 prop={data}/> */}
       {/* <Projects_s_m_l dataObj={data}/> */}
     </div>

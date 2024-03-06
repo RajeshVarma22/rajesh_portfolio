@@ -32,6 +32,7 @@
   }
 
   #summary {
+    margin-top: 5em;
     display: flex;
     #detailed_info {
       width: 60vw;
@@ -45,6 +46,7 @@
   }
 
   #experience {
+    display: flex;
     .experience_img {
       width: 300px;
       display: inline-block;
@@ -52,8 +54,16 @@
 
     .deatils {
       width: 60vw;
-      padding: 0px 0px 0px 1em;
+      padding: 4em 0.5em;
       display: inline-block;
+
+      .exp_position {
+        margin-bottom: 10px;
+        h1,
+        h3 {
+          color: #f70808;
+        }
+      }
     }
   }
 
