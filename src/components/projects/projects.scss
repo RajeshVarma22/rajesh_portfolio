@@ -1,0 +1,34 @@
+@import "../SCSS/variables.scss";
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $dark_theme_color;
+  overflow: hidden;
+
+  #desktop {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1022px) {
+  #desktop {
+    display: block;
+  }
+
+  #mobile_tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  #mobile_tablet {
+      display: block;
+  }
+  #desktop{
+    display: none;
+  }
+}
+

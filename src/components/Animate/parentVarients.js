@@ -13,8 +13,8 @@ export const stagger = {
   show: {
     opacity: 1,
     transition: {
-      delayChildren: 0.5,
-      staggerChildren: 0.8,
+      delayChildren: 1,
+      staggerChildren: 0.4,
     },
   },
 };
@@ -22,5 +22,5 @@ export const stagger = {
 
 export const staggerChildItem = {
   hidden: { y: "30%", opacity: 0 },
-  show: { y: "0%", opacity: 1, transition: { duration: 1 } },
+  show: { y: "0%", opacity: 1, transition: { duration: 0.6 } },
 };

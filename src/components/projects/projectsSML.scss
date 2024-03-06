@@ -1,0 +1,32 @@
+@import "../SCSS/variables.scss";
+
+#Projectssml {
+  width: 100vw;
+  background-color: $dark_theme_color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  .projectCard {
+    width: 41.666666667%;
+    background-color: $card_bg;
+    padding: 1em;
+    border: 2px solid $dark_theme_similar_color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    
+    
+    .headCard {
+      width: 100%;
+      height: auto;
+
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

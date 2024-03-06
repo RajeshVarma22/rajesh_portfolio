@@ -1,0 +1,47 @@
+.carousel {
+  position: relative;
+//   overflow: hidden; /* Hide overflow to hide parts of images outside the container */
+  width: 80%; /* Ensure the carousel takes up the full width */
+  display: flex;
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .left {
+    left: 10px;
+    color: red;
+    z-index: 1;
+  }
+
+  .right {
+    right: 10px;
+    color: red;
+  }
+
+  .images-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .image {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &:hover .image {
+    transform: scale(1.05);
+  }
+}
