@@ -8,6 +8,7 @@ import bootstrap from "../../assets/skills/Bootstrap.svg";
 import python from "../../assets/skills/Python.svg";
 import redux from "../../assets/skills/Redux.svg";
 import npm from "../../assets/skills/NPM.svg";
+import express from "../../assets/skills/express.svg"
 
 const skillsSymbols = [
   {
@@ -21,6 +22,10 @@ const skillsSymbols = [
   {
     name: "NodeJs",
     img: node,
+  },
+  {
+    name: "ExpressJs",
+    img: express,
   },
   {
     name: "HTML",
