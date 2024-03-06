@@ -4,12 +4,14 @@
   width: 100vw;
   background-color: $dark_theme_color;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 
   .projectCard {
-    width: 41.666666667%;
+    width: 95.666666667%;
     background-color: #060b10;
     padding: 1em;
     border: 2px solid #060b10;
@@ -68,6 +70,20 @@
             outline: none;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project_title_details {
+    display: block !important;
+
+    .project_demo {
+      margin-top: 10px;
+      .btns {
+        margin-left: 0px !important;
+        margin-right: 5px;
       }
     }
   }
