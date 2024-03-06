@@ -8,16 +8,18 @@ import Projects_s_m_l from "./Projects_s_m_l.jsx";
 const Projects = () => {
   return (
     <section id="projects">
-      <h1 id="pojects_title">Projects</h1>
+      <h1 id="pojects_title"><span className="project_title_span">Projects</span></h1>
       {/* <Carousel images={images}/> */}
 
-      {/* <div id ="desktop">
+      <div id="desktop">
         <Carousel1 prop={data} />
       </div>
       <div id="mobile_tablet">
         <Projects_s_m_l dataObj={data} />
-      </div> */}
-        <Projects_s_m_l dataObj={data} />
+      </div>
+      {/* <Carousel1 prop={data} /> */}
+
+      {/* <Projects_s_m_l dataObj={data} /> */}
     </section>
   );
 };

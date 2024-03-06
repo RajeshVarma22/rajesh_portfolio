@@ -17,7 +17,7 @@ function App() {
       <Skills /> 
       {/* <Test /> */}
       <Projects />
-      {/* <Carousel1 /> */}
+      {/* <Carousel1 prop={data}/> */}
       {/* <Projects_s_m_l dataObj={data}/> */}
     </div>
   );

@@ -1,23 +1,25 @@
 @import "../SCSS/variables.scss";
 
 #projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   background-color: $dark_theme_color;
   overflow: hidden;
 
-  #pojects_title{
-    padding: 5px 10px;
-    color: $sky_blue_color;
-    margin-bottom: 20px;
-    font-size: xx-large;
-    border-bottom: 3px solid red;
+  #pojects_title {
+    text-align: center;
+
+    .project_title_span {
+      padding: 5px 10px;
+      color: $sky_blue_color;
+      margin-bottom: 20px;
+      font-size: xx-large;
+      border-bottom: 3px solid red;
+    }
   }
 
   #desktop {
     position: relative;
+    height: 90vh;
+    width: 100%;
   }
 }
 
@@ -31,12 +33,11 @@
   }
 }
 
-@media screen and (max-width: 1021px) {
+@media screen and (max-width: 1024px) {
   #mobile_tablet {
-      display: block;
+    display: block;
   }
-  #desktop{
+  #desktop {
     display: none;
   }
 }
-
