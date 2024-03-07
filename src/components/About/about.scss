@@ -34,10 +34,11 @@
   #summary {
     margin-top: 5em;
     display: flex;
+    flex-wrap: wrap-reverse;
+
     #detailed_info {
       width: 60vw;
       padding: 0px 2em 0px 0px;
-      //   display: inline-block;
     }
 
     .about_me_img {
@@ -74,8 +75,40 @@
   }
 }
 
-@media screen and (max-width: 550px) {
-  #experience {
-    // display: block;
+@media screen and (max-width: 1200px) {
+  #About {
+    padding: 2em;
+
+    #summary {
+      justify-content: center;
+      margin-top: 2em;
+
+      .about_me_img {
+        margin: 0em 0em 2em 0em;
+      }
+
+      #detailed_info {
+        width: 90vw !important;
+      }
+    }
+    #experience {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .deatils {
+        width: 95vw !important;
+        padding: 4em 0.5em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #About {
+    padding: 1em;
+  }
+
+  .deatils {
+    padding: 2em 0.5em;
   }
 }

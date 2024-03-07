@@ -10,7 +10,7 @@ function Typewrite() {
           "MERN Stack Developer",
           "Python Developer"
         ],
-        autoStart: false,
+        autoStart: true,
         delay: 10,
         loop: true,
         deleteSpeed: 50,
