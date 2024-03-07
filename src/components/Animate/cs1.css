@@ -14,8 +14,9 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /* background-color: #06121b; */
+  /* background-color: #9faab3; */
   box-shadow: 0px 5px 5px #7d7c7c;
+  border: 2px solid rgb(156, 6, 63);
   padding: 50px;
   width: 1100px;
   height: 500px;
