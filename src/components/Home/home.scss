@@ -29,7 +29,7 @@
 
 @keyframes oscillatoryMotion {
   0% {
-    transform: translateY(0);
+    transform: translateY(10px);
     border-radius: 51% 49% 47% 53% / 43% 53% 47% 57%;
   }
   25% {
@@ -42,7 +42,7 @@
     border-radius: 45% 55% 43% 57% / 48% 41% 59% 52%;
   }
   100% {
-    transform: translateY(25px);
+    transform: translateY(30px);
     border-radius: 51% 49% 47% 53% / 43% 53% 47% 57%;
   }
 }
@@ -56,56 +56,63 @@
   }
 }
 
-#Home {
-  background-color: $dark_theme_color;
-  height: 95vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap-reverse;
+#Home_container {
+  position: relative;
 
-  #myMainImage {
-    height: 300px;
-    border-radius: 50%;
-    box-shadow: -11px 11px 22px #03080c, 11px -11px 22px #091c2a;
-    animation: oscillatoryMotion 5s ease-in-out 2s infinite alternate;
-    border: 2px solid $sky_blue_color;
-  }
+  #Home {
+    // background-color: $dark_theme_color;
+    position: absolute;
+    top: 0;
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding: 50px;
 
-  #Name {
-    .childElements {
-      width: fit-content;
-      margin: 20px 0px;
-      color: white;
-      padding-right: 0px;
-      border-radius: 5px;
-      background: linear-gradient(
-        to left,
-        rgb(0, 225, 255) 50%,
-        transparent 50%
-      );
-      background-size: 200% 100%;
-      background-position: right bottom;
-      transition: all 0.8s ease-out;
-      margin-bottom: 5px;
-      overflow: hidden;
-
-      h1 {
-        font-size: 2.5rem;
-      }
-      h2 {
-        font-size: 2rem;
-      }
+    #myMainImage {
+      height: 300px;
+      border-radius: 50%;
+      box-shadow: -11px 11px 22px #03080c, 11px -11px 22px #091c2a;
+      animation: oscillatoryMotion 5s ease-in-out 2s infinite alternate;
+      border: 2px solid $sky_blue_color;
     }
 
-    .buttonsContainer {
-      margin-top: 50px;
-      display: flex;
+    #Name {
+      .childElements {
+        width: fit-content;
+        margin: 20px 0px;
+        color: white;
+        padding-right: 0px;
+        border-radius: 5px;
+        background: linear-gradient(
+          to left,
+          rgb(0, 225, 255) 50%,
+          transparent 50%
+        );
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.8s ease-out;
+        margin-bottom: 5px;
+        overflow: hidden;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+      }
+
+      .buttonsContainer {
+        margin-top: 50px;
+        display: flex;
+      }
     }
   }
 }
-
 .wave {
   animation-name: wave-animation;
   margin-left: 10px;

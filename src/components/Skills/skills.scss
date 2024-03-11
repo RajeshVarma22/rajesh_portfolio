@@ -1,132 +1,136 @@
 @import "../SCSS/variables.scss";
 
-
-#Skills {
-  text-align: center;
-  padding: 50px 5rem;
-  background-color: $dark_theme_color;
-
-  #Skills_heading_cont {
-    margin-bottom: 30px;
-  }
-
-  &_heading {
-    font-size: 2.5rem;
-
-    color: $sky_blue_color;
-    font-weight: bolder;
-    font-size: xx-large;
+#skills_container {
+  position: relative;
+  #Skills {
+    position: absolute;
+    top: 0;
     text-align: center;
-    width: fit-content;
-    margin: 0px auto;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    background: linear-gradient(
-      to left,
-      $animate_slide_bg 50%,
-      transparent 50%
-    );
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all 0.4s ease-out;
-    margin-bottom: 5px;
-    overflow: hidden;
+    // padding: 50px 5rem;
+    // background-color: $dark_theme_color;
+    // height: 100vh;
 
-    span {
+    #Skills_heading_cont {
+      margin-bottom: 30px;
+    }
+
+    &_heading {
+      font-size: 2.5rem;
+
       color: $sky_blue_color;
-      display: inline-block;
-      padding: 5px 10px;
-      border-bottom: 2px solid red;
       font-weight: bolder;
       font-size: xx-large;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      font-size: 2.5rem;
-    }
-  }
+      text-align: center;
+      width: fit-content;
+      margin: 0px auto;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      background: linear-gradient(
+        to left,
+        $animate_slide_bg 50%,
+        transparent 50%
+      );
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.4s ease-out;
+      margin-bottom: 5px;
+      overflow: hidden;
 
-  #Skills_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    // gap: 40px;
-    // row-gap: 40px;
-    gap: 60px 50px;
-  }
-
-  .skill {
-    width: 150px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10%;
-    // background: linear-gradient(
-    //   350deg,
-    //   #3778ae,
-    //   #ffd7489a
-    // ); 
-    background-color: $card_bg;
-    border: 1px solid $sky_blue_color;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 15px $sky_blue_color; 
-    overflow: hidden;
-
-    &:hover {
-      background-color: rgb(0, 60, 124);
-      color: white ;
-      h3 {
-        color: white;
+      span {
+        color: $sky_blue_color;
+        display: inline-block;
+        padding: 5px 10px;
+        border-bottom: 2px solid red;
+        font-weight: bolder;
+        font-size: xx-large;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 2.5rem;
       }
-
-    }
-
-    .skill_Img {
-      max-width: 50%;
-      height: auto;
-    }
-
-    h3 {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: #333;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-
-    &_heading_cont {
-      margin-bottom: 50px;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    #Skills_heading {
-      font-size: 2rem;
-    }
-
-    .skill {
-      width: calc(25% - 20px);
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    .skill {
-      width: calc(50% - 10px);  
     }
 
     #Skills_container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      // gap: 40px;
+      // row-gap: 40px;
+      gap: 60px 50px;
+    }
+
+    .skill {
+      width: 150px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10%;
+      // background: linear-gradient(
+      //   350deg,
+      //   #3778ae,
+      //   #ffd7489a
+      // );
+      background-color: $card_bg;
+      border: 1px solid $sky_blue_color;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 15px $sky_blue_color;
+      overflow: hidden;
+
+      &:hover {
+        background-color: rgb(0, 60, 124);
+        color: white;
+        h3 {
+          color: white;
+        }
+      }
+
+      .skill_Img {
+        max-width: 50%;
+        height: auto;
+      }
+
+      h3 {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        color: #333;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+
+      &_heading_cont {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      #Skills_heading {
+        font-size: 2rem;
+      }
+
+      .skill {
+        width: calc(25% - 20px);
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .skill {
+        width: calc(50% - 10px);
+      }
+
+      #Skills_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
     }
   }
 }

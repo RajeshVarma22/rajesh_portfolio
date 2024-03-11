@@ -1,0 +1,39 @@
+@import "../SCSS/variables.scss";
+
+// .custom-shape-divider-bottom-book {
+//     width: 100%;
+//     overflow: hidden;
+//     line-height: 0;
+//     transform: rotate(180deg);
+
+//     svg {
+//         position: relative;
+//         display: block;
+//         width: calc(162% + 1.3px);
+//         height: 172px;
+
+//         #SectionDividerBook {
+//             fill: #BD10E0;
+//         }
+//     }
+// }
+
+.custom-shape-divider-bottom-book {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: $projects_page_color_2;
+  
+  svg {
+      position: relative;
+      display: block;
+      width: calc(179% + 1.3px);
+    //   height: 158px;
+      height: 90vh;
+
+    #SectionDividerBook {
+      fill: $projects_page_color_1;
+    }
+  }
+}

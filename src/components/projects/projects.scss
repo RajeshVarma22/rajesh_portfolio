@@ -1,11 +1,12 @@
 @import "../SCSS/variables.scss";
 
 #projects {
-  background-color: $dark_theme_color;
+  background-color: $projects_page_color_1;
   overflow: hidden;
 
   #pojects_title {
     text-align: center;
+    // padding-top: 10em; 
 
     .project_title_span {
       padding: 5px 10px;

@@ -2,8 +2,8 @@
 
 #About {
   //   height: 95vh;
-  background-color: $dark_theme_color;
-  padding: 10em;
+  background-color: $page2_color;
+  padding: 0em 10em;
 
   .heading_text {
     color: $sky_blue_color;
@@ -11,7 +11,8 @@
     font-size: xx-large;
     text-align: center;
     width: fit-content;
-    margin: 20px auto;
+    // margin: 20px auto;
+    margin: auto;
     border-radius: 5px;
     background: linear-gradient(
       to left,

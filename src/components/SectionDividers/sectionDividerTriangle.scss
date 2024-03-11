@@ -1,0 +1,20 @@
+@import "../SCSS/variables.scss";
+
+
+.custom-shape-divider-top-1710119460 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: $home_page_color_2;
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 95vh;
+
+    #shape_triangle {
+      fill: $home_page_color_1;
+    }
+  }
+}

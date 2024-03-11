@@ -1,0 +1,21 @@
+@import "../SCSS/variables.scss";
+
+
+.custom-shape-divider-top-1710118099 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: $page2_color;
+  
+    svg {
+      position: relative;
+      display: block;
+      width: calc(127% + 1.3px);
+      height: 87px;
+  
+      #shape-fill {
+        fill: $home_page_color_2;
+      }
+    }
+  }
+  

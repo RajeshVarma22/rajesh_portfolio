@@ -7,55 +7,57 @@ import {
   stagger,
   staggerChildItem,
 } from "../Animate/parentVarients";
+import SectionDividerCurve from "../SectionDividers/SectionDividerCurve";
 
 const Skills = () => {
   return (
-    <section id="Skills">
-      <div id="Skills_heading_cont">
-        <m.h1
-          id="Skills_heading"
-          whileInView={{ backgroundPosition: "left bottom" }}
-        >
-          <m.span
-            variants={parentVarints}
-            initial="hidden"
-            whileInView={"show"}
-          >
-            Skills
-          </m.span>
-        </m.h1>
+    <div id="skills_container">
+      <div id="divide_curve">
+        <SectionDividerCurve />
       </div>
-      <m.div
-        id="Skills_container"
-        variants={stagger}
-        initial="hidden"
-        whileInView="show"
-      >
-        {skillsSymbols.map((skill) => {
-          return (
-            <m.div
-              className="skill"
-              variants={staggerChildItem}
-              whileHover={{
-                translateY: "-10px",
-                transition: { duration: 0.5 },
-              }}
+      <section id="Skills">
+        <div id="Skills_heading_cont">
+          <m.h1
+            id="Skills_heading"
+            whileInView={{ backgroundPosition: "left bottom" }}
+          >
+            <m.span
+              variants={parentVarints}
+              initial="hidden"
+              whileInView={"show"}
             >
-              <img
-                className="skill_Img"
-                src={skill.img}
-                alt={`${skill.name}`}
-              />
-              <h3>{skill.name}</h3>
+              Skills
+            </m.span>
+          </m.h1>
+        </div>
+        <m.div
+          id="Skills_container"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+        >
+          {skillsSymbols.map((skill) => {
+            return (
+              <m.div
+                className="skill"
+                variants={staggerChildItem}
+                whileHover={{
+                  translateY: "-10px",
+                  transition: { duration: 0.5 },
+                }}
+              >
+                <img
+                  className="skill_Img"
+                  src={skill.img}
+                  alt={`${skill.name}`}
+                />
+                <h3>{skill.name}</h3>
+              </m.div>
+            );
+          })}
+        </m.div>
 
-            </m.div>
-          );
-        })}
-      </m.div>
-
-     
-
-      {/* <div id="Skills_container">
+        {/* <div id="Skills_container">
         <AnimatePresence >
         {skillsSymbols.map((skill, index) => (
           <motion.div
@@ -72,7 +74,8 @@ const Skills = () => {
         ))}
         </AnimatePresence>
       </div> */}
-    </section>
+      </section>
+    </div>
   );
 };
 
