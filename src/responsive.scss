@@ -1,0 +1,36 @@
+@import "./components/SCSS/variables.scss";
+
+#home_page {
+  position: relative;
+}
+#about_page {
+  position: relative;
+}
+#skills_page {
+  position: relative;
+}
+#projects_page {
+  position: relative;
+}
+.divider_Component {
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  #home_page {
+    #dividers {
+      display: none;
+    }
+    .divider_Component{
+      position: static;
+      background-color: $home_page_color_2;
+    }
+  }
+}
+
+@media screen and (min-width: 701px) {
+  #dividers {
+    display: block !important;
+  }
+}

@@ -56,60 +56,59 @@
   }
 }
 
-#Home_container {
-  position: relative;
+#Home {
+  // background-color: $dark_theme_color;
+  // position: absolute;
+  // top: 0;
+  width: 95vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  padding: 50px;
 
-  #Home {
-    // background-color: $dark_theme_color;
-    position: absolute;
-    top: 0;
-    width: 95vw;
-    height: 90vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    padding: 50px;
+  #myMainImage {
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: -11px 11px 22px #03080c, 11px -11px 22px #091c2a;
+    animation: oscillatoryMotion 5s ease-in-out 2s infinite alternate;
+    border: 2px solid $sky_blue_color;
+  }
 
-    #myMainImage {
-      height: 300px;
-      border-radius: 50%;
-      box-shadow: -11px 11px 22px #03080c, 11px -11px 22px #091c2a;
-      animation: oscillatoryMotion 5s ease-in-out 2s infinite alternate;
-      border: 2px solid $sky_blue_color;
+  #Name {
+    margin-top: 40px;
+    
+    .childElements {
+      width: fit-content;
+      text-align: center;
+      margin: 20px 0px;
+      color: white;
+      padding-right: 0px;
+      border-radius: 5px;
+      background: linear-gradient(
+        to left,
+        rgb(0, 225, 255) 50%,
+        transparent 50%
+      );
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.8s ease-out;
+      margin-bottom: 5px;
+      overflow: hidden;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
     }
 
-    #Name {
-      .childElements {
-        width: fit-content;
-        margin: 20px 0px;
-        color: white;
-        padding-right: 0px;
-        border-radius: 5px;
-        background: linear-gradient(
-          to left,
-          rgb(0, 225, 255) 50%,
-          transparent 50%
-        );
-        background-size: 200% 100%;
-        background-position: right bottom;
-        transition: all 0.8s ease-out;
-        margin-bottom: 5px;
-        overflow: hidden;
-
-        h1 {
-          font-size: 2.5rem;
-        }
-        h2 {
-          font-size: 2rem;
-        }
-      }
-
-      .buttonsContainer {
-        margin-top: 50px;
-        display: flex;
-      }
+    .buttonsContainer {
+      margin-top: 50px;
+      display: flex;
     }
   }
 }
@@ -123,6 +122,9 @@
 }
 
 @media screen and (max-width: 550px) {
+  // #Home {
+  //   background-color: $dark_theme_color;
+  // }
   #myMainImage {
     height: 200px;
   }

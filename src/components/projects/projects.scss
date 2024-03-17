@@ -3,15 +3,14 @@
 #projects {
   background-color: $projects_page_color_1;
   overflow: hidden;
+  padding-bottom: 20px;
 
   #pojects_title {
     text-align: center;
-    // padding-top: 10em; 
 
     .project_title_span {
       padding: 5px 10px;
       color: $sky_blue_color;
-      margin-bottom: 20px;
       font-size: xx-large;
       border-bottom: 3px solid red;
     }

@@ -1,13 +1,9 @@
 @import "../SCSS/variables.scss";
 
-#skills_container {
-  position: relative;
   #Skills {
-    position: absolute;
-    top: 0;
     text-align: center;
     // padding: 50px 5rem;
-    // background-color: $dark_theme_color;
+    background-color: $skills_page_color_2;
     // height: 100vh;
 
     #Skills_heading_cont {
@@ -50,6 +46,7 @@
     }
 
     #Skills_container {
+      padding: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -121,6 +118,9 @@
     }
 
     @media only screen and (max-width: 600px) {
+      #Skills{
+        height: fit-content;
+      }
       .skill {
         width: calc(50% - 10px);
       }
@@ -133,4 +133,3 @@
       }
     }
   }
-}

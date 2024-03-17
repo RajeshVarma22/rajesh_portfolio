@@ -1,41 +1,20 @@
 @import "../SCSS/variables.scss";
 
-// .custom-shape-divider-top-wave {
-//   width: 100%;
-//   overflow: hidden;
-//   line-height: 0;
-//   transform: rotate(180deg);
-//   background-color: $skills_page_color_2;
-
-//   svg {
-//     position: relative;
-//     display: block;
-//     width: calc(156% + 1.3px);
-//     height: 200px;
-
-//     #shape_fill_curve {
-//       fill: $skills_page_color_1;
-//     }
-//   }
-// }
-
 .custom-shape-divider-top-wave {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  height: 100vh;
   background-color: $skills_page_color_2;
 
   svg {
     position: relative;
     display: block;
     width: calc(145% + 1.3px);
-    height: 151px;
+    height: 111px;
 
     .shape_fill_wave {
      fill: $skills_page_color_1;
     }
   }
 }
-
 

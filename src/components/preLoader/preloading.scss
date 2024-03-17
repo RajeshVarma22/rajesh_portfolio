@@ -1,0 +1,55 @@
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+#Preloading {
+  height: 100vh;
+
+  #welcome_msg_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #welcome_msg {
+      display: flex;
+      font-size: 80px;
+      letter-spacing: 15px;
+      
+      .animate_charecter {
+        background-image: linear-gradient(
+          -225deg,
+          #290b95 0%,
+          #0bf545 19%,
+          #ff1361 57%,
+          #06959d 70%,
+          #ae00ff 85%,
+          #290b95 100%
+      
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+      }
+    }
+  }
+}
+
+
+
+
+
+#bar1 {
+  background: linear-gradient(to left, rgb(0, 225, 255) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.8s ease-out;
+}

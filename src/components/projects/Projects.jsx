@@ -3,12 +3,11 @@ import { data, images } from "./projectList.js";
 import "./projects.scss";
 import Carousel1 from "../Animate/Carousel1.jsx";
 import Projects_s_m_l from "./Projects_s_m_l.jsx";
-import SectionDivider1 from "../SectionDividers/SectionDivider1.jsx";
 
 const Projects = () => {
   return (
     <section id="projects">
-      <SectionDivider1 />
+      
       <h1 id="pojects_title">
         <span className="project_title_span">Projects</span>
       </h1>

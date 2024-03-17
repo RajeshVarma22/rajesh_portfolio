@@ -1,43 +1,52 @@
 /* From uiverse.io by @alshahwan */
 .btn-r {
+  text-align: center;
   margin-right: 30px;
   background-color: #fff;
   border: 1px solid rgb(0, 133, 150);
-  padding: 5px;
+  padding: 5px 2px;
   position: relative;
-  width: 7.2em;
+  width: 8.2em;
   height: 2em;
-  transition: 0.5s;
+  transition: all 1s;
   font-size: 17px;
   border-radius: 1em;
   font-weight: bolder;
 }
 
+.btn-r:hover {
+  cursor: pointer;
+}
+
 .btn-r p {
-  position: absolute;
-  top: 0.4em;
-  left: 1.2em;
+  // position: absolute;
+  // top: 0.35em;
+  // left: 1.2em;
   margin: 0;
   padding: 0;
-  transition: 0.5s;
+  transition: all 1s;
   color: rgb(0, 133, 150);
 }
 
 .btn-r svg {
   position: absolute;
-  top: 0.45em;
+  top: 25%;
   right: 0.5em;
   margin: 0;
-  padding: 0;
+  // padding: 0px 3px;
   opacity: 0;
-  transition: 0.5s;
+  transition: all 1s;
   height: 1em;
   fill: #fff;
+  width: 25px;
 }
 
 .btn-r:hover p {
-  left: 0.6em;
-  color: #fff;
+  position: relative;
+    // top: 0.35em;
+  left: -1em;
+  color: #ffff;
+  transition: all 1s;
 }
 
 .btn-r:hover svg {

@@ -1,12 +1,45 @@
-* {
-  /* margin: 0;
-      padding: 0;
-        box-sizing: border-box;
-        border: none;
-        outline: none;
-        text-decoration: none;
-        list-style: none; */
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+#link_code {
+  margin-top: 20px;
+}
+
+#des {
+  width: 70vw;
+  padding: 20px;
+  z-index: 7;
+  position: absolute;
+  left: 14.5%;
+  top: 30%;
+  /* background-color: rgb(0,0,0);  */
+  background-color: rgba(0, 0, 0, 0.555);
+  color: white;
+  font-weight: bold;
+}
+#des #project_des_title {
+  color: #22e5ff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#des .desContent {
+  margin: 5px 0px;
+}
+
+#des #desCloseBtn {
+  margin-top: 20px;
+  font-size: large;
+  float: right;
+  padding: 7px 20px;
+  background-color: red;
+  border-radius: 10px;
+  border: 1px solid red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blurBg {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 #Carousel_container {
@@ -79,7 +112,8 @@
 
 .item .content {
   position: absolute;
-  background-color: aqua;
+  /* background-color: aqua; */
+
   bottom: -6.8%;
   width: max-content;
   text-align: left;
@@ -90,7 +124,7 @@
 }
 .item:nth-child(2) .content {
   display: block;
-  z-index: 11111;
+  z-index: 2;
 }
 .item .name {
   font-size: 40px;
@@ -98,26 +132,29 @@
   opacity: 0;
   animation: showcontent 1s ease-in-out 1 forwards;
 }
-/* .item .des {
-  font-size: 13px;
-  margin: 20px 0;
-  opacity: 0;
-  animation: showcontent 1s ease-in-out 0.3s 1 forwards;
-} */
 
 .item .btn_seeMore {
-  opacity: 0;
+  text-align: center;
+  background-color: #fff;
+  color: #008596;
+  border: 2px solid #008596;
+  border-radius: 20px;
+  box-shadow: 1px 2px 2px black;
+  padding: 5px 2px;
+  width: 8.2em;
   animation: showcontent 1s ease-in-out 0.6s 1 forwards;
   padding: 10px 20px;
   position: absolute;
   margin-top: 30px;
-  border: 1px solid red;
   cursor: pointer;
+  font-weight: bolder;
+  font-size: medium;
 }
 
 .item .btn_seeMore:hover {
   border: 1px solid rgb(0, 255, 76);
-  background-color: #0af4e4;
+  background-color: #008596;
+  color: #fff;
 }
 
 @keyframes showcontent {
@@ -134,21 +171,24 @@
 }
 .buttons {
   position: absolute;
-  bottom: -50px;
-  z-index: 222222;
+  bottom: -60px;
+  z-index: 3;
   text-align: center;
   right: 50%;
 }
 .buttons button {
   width: 40px;
+  cursor: pointer;
   height: 40px;
   margin: 0px 10px;
   border-radius: 50%;
   border: 1px solid #555;
   transition: 0.5s;
+  font-weight: bolder;
 }
 .buttons button:hover {
-  background-color: #0af4e4;
+  background-color: #008596;
+  color: #fff;
 }
 
 @media screen and (min-width: 1023px) {

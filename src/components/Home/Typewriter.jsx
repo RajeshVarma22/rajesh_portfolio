@@ -13,7 +13,7 @@ function Typewrite() {
         autoStart: true,
         delay: 10,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 60
       }}
     />
   );

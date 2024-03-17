@@ -2,13 +2,52 @@
 
 #Projectssml {
   width: 100vw;
-  background-color: $dark_theme_color;
+  // background-color: $dark_theme_color;
   display: flex;
   // flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
+
+  .project_see_details {
+    padding: 20px;
+    position: absolute;
+    border-radius: 16px;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+    background-color: rgba(6, 10, 15, 0.805);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .project_title_m {
+      text-align: center;
+      color: #ffff;
+    }
+    .desContent {
+      color: #ffff;
+      font-weight: 400;
+    }
+
+    .desCloseBtn {
+      margin-top: 20px;
+      width: fit-content;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: large;
+      float: right;
+      padding: 7px 20px;
+      background-color: red;
+      border-radius: 10px;
+      border: 1px solid red;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
 
   .projectCard {
     width: 95.666666667%;
@@ -24,12 +63,18 @@
       width: 100%;
       height: auto;
       border-radius: inherit;
+      position: relative;
 
       img {
         width: 100%;
         height: auto;
         border: 2px solid $card_bg;
         border-radius: 16px;
+      }
+      .bg_blur {
+        transition: all 2s;
+        filter: blur(3.5px);
+        -webkit-filter: blur(3.5px);
       }
     }
 
@@ -38,7 +83,9 @@
       color: white;
 
       .skills_used {
+        margin-bottom: 10px;
         display: flex;
+        flex-wrap: wrap;
 
         .skills_names {
           background-color: #ac5f5f;
@@ -46,6 +93,12 @@
           padding: 5px 10px;
           border-radius: 20px;
           font-size: smaller;
+          font-weight: 500;
+        }
+
+        .skills_names:hover {
+          background-color: #008596;
+          color: #fff;
         }
       }
       .project_title_details {
@@ -61,17 +114,54 @@
 
         .project_demo {
           .btns {
-            color: #fafafc;
+            color: #008596;
             margin-left: 10px;
             padding: 0.5em 1em;
             border-radius: 24px;
-            background-color: #ac5f5f;
-            border: none;
+            background-color: $white_color;
             outline: none;
+            border: 2.5px solid #008596;
+            font-weight: bolder;
           }
         }
       }
+      .More_Info {
+        display: none;
+        .desContent{
+          margin-bottom: 5px;
+        }
+
+        .desCloseBtn {
+          margin-top: 20px;
+          width: fit-content;
+          font-size: large;
+          float: right;
+          padding: 7px 20px;
+          background-color: red;
+          border-radius: 10px;
+          border: 1px solid red;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
     }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bg_blur {
+    transition: all 2s;
+    filter: blur(0.1px) !important;
+    -webkit-filter: blur(0.1px) !important;
+  }
+  .project_see_details {
+    display: none !important;
+  }
+
+  .More_Info {
+    display: block !important;
+    margin-top: 15px;
   }
 }
 
@@ -86,5 +176,13 @@
         margin-right: 5px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills_names {
+    margin-right: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
   }
 }

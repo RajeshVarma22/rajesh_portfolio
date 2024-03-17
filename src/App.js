@@ -1,24 +1,41 @@
-import About from "./components/About/About";
-import Carousel1 from "./components/Animate/Carousel1";
+import "./responsive.scss";
+import Navbar from "./components/navbar/Navbar";
 import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
 import SectionDivider1 from "./components/SectionDividers/SectionDivider1";
 import SectionDividerTriangle from "./components/SectionDividers/SectionDividerTriangle";
-import Skills from "./components/Skills/Skills";
-import Test from "./components/Test";
-import Navbar from "./components/navbar/Navbar";
+import SectionDividerCurve from "./components/SectionDividers/SectionDividerCurve";
 import Projects from "./components/projects/Projects";
-import Projects_s_m_l from "./components/projects/Projects_s_m_l";
-import { data } from "./components/projects/projectList";
+import Preloading from "./components/preLoader/Preloading";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <SectionDivider1 />
-      <About />
-      <Skills />
-      <Projects />
+      {/* <Preloading /> */}
+
+      <div id="home_page">
+        <div id="dividers">
+          <SectionDividerTriangle />
+        </div>
+        <div className="divider_Component">
+          <Home />
+        </div>
+      </div>
+      <div id="about_page">
+        <SectionDivider1 />
+        <About />
+      </div>
+      <div id="skills_page">
+        <SectionDividerCurve />
+        <Skills />
+      </div>
+      <div id="projects_page">
+        <SectionDivider1 />
+        <Projects />
+      </div>
+
       {/* <Test /> */}
       {/* <Carousel1 prop={data}/> */}
       {/* <Projects_s_m_l dataObj={data}/> */}

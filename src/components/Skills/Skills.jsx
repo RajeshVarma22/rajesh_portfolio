@@ -7,14 +7,10 @@ import {
   stagger,
   staggerChildItem,
 } from "../Animate/parentVarients";
-import SectionDividerCurve from "../SectionDividers/SectionDividerCurve";
 
 const Skills = () => {
   return (
-    <div id="skills_container">
-      <div id="divide_curve">
-        <SectionDividerCurve />
-      </div>
+
       <section id="Skills">
         <div id="Skills_heading_cont">
           <m.h1
@@ -75,7 +71,6 @@ const Skills = () => {
         </AnimatePresence>
       </div> */}
       </section>
-    </div>
   );
 };
 

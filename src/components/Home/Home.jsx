@@ -4,12 +4,10 @@ import { parentVarints } from "../Animate/parentVarients";
 import myProfile from "../../assets/My Profile.jpeg";
 import Button2 from "../Buttons/Button2";
 import "./home.scss";
-import SectionDividerTriangle from "../SectionDividers/SectionDividerTriangle";
 
 const Home = () => {
+  
   return (
-    <div id="Home_container">
-    <SectionDividerTriangle />
       <section id="Home" className="sections container m-4">
         <div id="Name">
           <m.div
@@ -38,14 +36,14 @@ const Home = () => {
             className="childElements"
             whileInView={{ backgroundPosition: "left bottom" }}
           >
-            <m.h2
+            <m.h3
               variants={parentVarints}
               initial="hidden"
               whileInView="show"
               style={{ color: "red" }}
             >
               <Typewriter />
-            </m.h2>
+            </m.h3>
           </m.div>
           <div className="buttonsContainer">
             <a
@@ -68,17 +66,15 @@ const Home = () => {
             />
           </div>
         </div>
-
-        <div className="myImageContainer" id="my_image">
+        <div id="myMainImageContainer">
           <img
             src={myProfile}
             alt="My Profile"
             id="myMainImage"
-            className="content myMainImagee"
+            className="content myMainImage"
           />
         </div>
       </section>
-    </div>
   );
 };
 
