@@ -18,10 +18,10 @@ function App() {
 
   useEffect(() => {
     return () => {
+      console.log("Entered useEffect");
       setTimeout(() => {
         setLoadingBars(true);
       }, 5300);
-      console.log("Entered useEffect");
 
       setTimeout(() => {
         setLoading(true);
