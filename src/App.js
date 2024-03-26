@@ -18,9 +18,9 @@ function App() {
 
   useEffect(() => {
     return () => {
-      setTimeout(() => {
-        setLoadingBars(true);
-      }, 5300);
+      // setTimeout(() => {
+      //   setLoadingBars(true);
+      // }, 5300);
       setTimeout(() => {
         setLoading(true);
       }, 6300);
