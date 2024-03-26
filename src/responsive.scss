@@ -17,20 +17,20 @@
   top: 0;
 }
 
-@media screen and (max-width: 700px) {
-  #home_page {
-    #dividers {
-      display: none;
-    }
-    .divider_Component{
-      position: static;
-      background-color: $home_page_color_2;
-    }
-  }
-}
+// @media screen and (max-width: 700px) {
+//   #home_page {
+//     #dividers {
+//       display: none;
+//     }
+//     .divider_Component{
+//       position: static;
+//       background-color: $home_page_color_2;
+//     }
+//   }
+// }
 
-@media screen and (min-width: 701px) {
-  #dividers {
-    display: block !important;
-  }
-}
+// @media screen and (min-width: 701px) {
+//   #dividers {
+//     display: block !important;
+//   }
+// }

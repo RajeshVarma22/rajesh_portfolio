@@ -57,17 +57,17 @@
 }
 
 #Home {
-  // background-color: $dark_theme_color;
+  background-color: $dark_theme_color;
   // position: absolute;
   // top: 0;
-  width: 95vw;
+  // width: 95vw;
   height: 90vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap-reverse;
-  padding: 50px;
+  // padding: 50px;
 
   #myMainImage {
     height: 300px;

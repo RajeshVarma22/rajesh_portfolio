@@ -1,55 +1,84 @@
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
+@import "../SCSS/variables.scss";
 
+$darkColors: (
+  #ff6347 #4169e1 #ffd700 #8a2be2 #32cd32 #ff4500 #1e90ff #ff69b4 #00ced1
+    #ff8c00
+);
+
+// @keyframes textclip {
+//   to {
+//     background-position: 200% center;
+//   }
+// }
 
 #Preloading {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
   height: 100vh;
+  background-color: #000b11;
 
-  #welcome_msg_container {
-    height: 100vh;
+  #innerContent {
+    position: absolute;
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 
-    #welcome_msg {
-      display: flex;
-      font-size: 80px;
-      letter-spacing: 15px;
-      
-      .animate_charecter {
-        background-image: linear-gradient(
-          -225deg,
-          #290b95 0%,
-          #0bf545 19%,
-          #ff1361 57%,
-          #06959d 70%,
-          #ae00ff 85%,
-          #290b95 100%
-      
-        );
-        background-size: auto auto;
-        background-clip: border-box;
-        background-size: 200% auto;
-        color: #fff;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: textclip 2s linear infinite;
-      }
+    .my_name_bg {
+      font-family: "Foldit", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      margin: 10px 20px;
+      text-transform: uppercase;
+    }
+
+    #logo_component {
+      width: fit-content;
+      margin: auto;
+    }
+
+    #last_name {
+      float: right;
+    }
+  }
+
+  #barsContainer {
+    display: flex;
+
+    .bars {
+      height: 100vh;
+      width: 10vw;
     }
   }
 }
 
+@for $i from 1 through length($darkColors) {
+  // @for $i from 1 through 10 { we can write like this aslo
+  $color: nth($darkColors, $i);
 
-
-
-
-#bar1 {
-  background: linear-gradient(to left, rgb(0, 225, 255) 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all 0.8s ease-out;
+  #bar#{$i} {
+    background: linear-gradient(to left, $color 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.8s ease-out;
+  }
 }
+
+@media screen and (min-width: 769px) {
+  .my_name_bg {
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my_name_bg {
+    font-size: 100px;
+  }
+  #logo_svg {
+    height: 183px;
+    width: 348px;
+  }
+}
+
+//183h
+//368h

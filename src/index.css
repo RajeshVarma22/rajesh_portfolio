@@ -17,3 +17,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  /* background: #5abdf6; Track color */
+  /* background: linear-gradient(45deg, #051c2c, #022e4d); */
+  background: linear-gradient(45deg, #0162a8, #000351, #022e4d);
+}
+
+::-webkit-scrollbar-thumb {
+  background: orangered; 
+  /* border-radius: 5px;  */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* background: #d10707; Hover color */
+  background: #fff; 
+}
