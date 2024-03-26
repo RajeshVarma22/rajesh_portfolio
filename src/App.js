@@ -16,7 +16,11 @@ function App() {
   const [isLoading, setLoading] = useState(false);
   const [isLoadingBars, setLoadingBars] = useState(false);
 
+  console.log("Top useEffect");
+
   useEffect(() => {
+    console.log("Entered useEffect before return");
+
     return () => {
       console.log("Entered useEffect");
       setTimeout(() => {
