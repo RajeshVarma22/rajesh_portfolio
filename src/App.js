@@ -18,16 +18,19 @@ function App() {
 
   useEffect(() => {
     return () => {
-      // setTimeout(() => {
-      //   setLoadingBars(true);
-      // }, 5300);
+      setTimeout(() => {
+        setLoadingBars(true);
+      }, 5300);
+      console.log("Entered useEffect");
+
       setTimeout(() => {
         setLoading(true);
+        console.log("setTimeout 6300 working");
       }, 6300);
+      console.log("End useEffect");
     };
-  }, []);
+  }, [isLoading]);
 
-  
   return (
     <div className="App" style={{ backgroundColor: "black" }}>
       {/* <Preloading /> */}
@@ -52,7 +55,7 @@ function App() {
           </div>{" "}
         </>
       ) : (
-        <Preloading isLoadingBars={isLoadingBars}/>
+        <Preloading isLoadingBars={isLoadingBars} />
       )}
 
       {/* <div id="dividers">
