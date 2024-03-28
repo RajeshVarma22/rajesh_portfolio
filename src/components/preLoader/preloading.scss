@@ -28,8 +28,10 @@ $darkColors: (
     justify-content: space-between;
     .my_name_bg {
       font-family: "Foldit", sans-serif;
-      font-weight: 600;
+      font-weight: 200;
       font-style: normal;
+      // font-size: medium;
+      font-size: 20vh;
       margin: 10px 20px;
       text-transform: uppercase;
     }

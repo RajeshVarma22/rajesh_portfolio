@@ -34,7 +34,7 @@ const Preloading = ({ isLoadingBars }) => {
 
   return (
     <div id="Preloading">
-      {isLoadingBars ? (
+      {/* {isLoadingBars ? (
         <div id="barsContainer">
           {[...Array(10)].map((_, index) => (
             <m.div
@@ -44,7 +44,7 @@ const Preloading = ({ isLoadingBars }) => {
                 transitionDelay: "5.1s",
               }}
               className="bars"
-              id={`bar${index+1}`}
+              id={`bar${index + 1}`}
             ></m.div>
           ))}
         </div>
@@ -70,7 +70,29 @@ const Preloading = ({ isLoadingBars }) => {
             </span>
           </m.h1>
         </div>
-      )}
+      )} */}
+
+      <div id="innerContent">
+        <m.h1
+          variants={firstNameAnimate}
+          initial="hidden"
+          animate="show"
+          className="my_name_bg"
+          id="first_name"
+        >
+          Rajesh
+        </m.h1>
+        <div id="logo_container">
+          <div id="logo_component">
+            <AnimatedLog />
+          </div>
+        </div>
+        <m.h1 variants={lastNameAnimate} initial="hidden" animate="show">
+          <span className="my_name_bg" id="last_name">
+            Varma
+          </span>
+        </m.h1>
+      </div>
     </div>
   );
 };
