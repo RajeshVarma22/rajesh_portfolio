@@ -19,7 +19,6 @@ $darkColors: (
   background-color: #000b11;
 
   #innerContent {
-    border: 1px solid rebeccapurple;
     height: 100vh;
     position: absolute;
     width: 100vw;
@@ -27,22 +26,31 @@ $darkColors: (
     flex-direction: column;
     justify-content: space-between;
     .my_name_bg {
+      // height: 22vh;
       font-family: "Foldit", sans-serif;
-      font-weight: 200;
+      font-weight: 600;
       font-style: normal;
-      // font-size: medium;
       font-size: 20vh;
-      margin: 10px 20px;
+      padding: 0vh 20px;
       text-transform: uppercase;
+      border: 2px solid red;
+      margin: 0px;
+      display: flex;
+      align-items: center;
     }
 
     #logo_component {
       width: fit-content;
+      height: 50vh;
       margin: auto;
     }
 
+    #first_name {
+      float: left;
+    }
     #last_name {
       float: right;
+      height: fit-content;
     }
   }
 

@@ -2,7 +2,7 @@ import React from "react";
 import { motion as m } from "framer-motion";
 
 
-const AnimatedLog = ({ height = "366", width = "736", stroke = 0.5 }) => {
+const AnimatedLog = ({ height = "366", width = "100vh", stroke = 0.5 }) => {
 
   
   const parentVariants = {
@@ -99,7 +99,7 @@ const AnimatedLog = ({ height = "366", width = "736", stroke = 0.5 }) => {
         initial="hidden"
         animate="show"
         width={width}
-        height={height}
+        // height={height}
         viewBox="0 0 361 182"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

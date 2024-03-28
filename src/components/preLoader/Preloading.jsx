@@ -73,14 +73,10 @@ const Preloading = ({ isLoadingBars }) => {
       )} */}
 
       <div id="innerContent">
-        <m.h1
-          variants={firstNameAnimate}
-          initial="hidden"
-          animate="show"
-          className="my_name_bg"
-          id="first_name"
-        >
-          Rajesh
+        <m.h1 variants={firstNameAnimate} initial="hidden" animate="show">
+          <span className="my_name_bg" id="first_name">
+            Rajesh
+          </span>
         </m.h1>
         <div id="logo_container">
           <div id="logo_component">
