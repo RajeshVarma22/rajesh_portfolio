@@ -11,7 +11,7 @@ const Preloading = ({ isLoadingBars }) => {
     },
     show: {
       x: 0,
-      opacity: 0.3,
+      opacity: 0.58,
       transition: {
         duration: 1,
         // ease: "ease"
@@ -25,7 +25,7 @@ const Preloading = ({ isLoadingBars }) => {
     },
     show: {
       x: 0,
-      opacity: 0.3,
+      opacity: 0.57,
       transition: {
         duration: 1,
       },

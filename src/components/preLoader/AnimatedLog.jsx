@@ -2,7 +2,7 @@ import React from "react";
 import { motion as m } from "framer-motion";
 
 
-const AnimatedLog = ({ height = "366", width = "100vh", stroke = 0.5 }) => {
+const AnimatedLog = ({ height = "366", width = "100vh", stroke = 1.5 }) => {
 
   
   const parentVariants = {
