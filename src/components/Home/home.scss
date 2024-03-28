@@ -79,7 +79,7 @@
 
   #Name {
     margin-top: 40px;
-    
+
     .childElements {
       width: fit-content;
       text-align: center;
@@ -105,9 +105,11 @@
         font-size: 2rem;
       }
     }
-
+    #social_media_container {
+      margin-top: 30px;
+    }
     .buttonsContainer {
-      margin-top: 50px;
+      margin-top: 20px;
       display: flex;
     }
   }

@@ -1,0 +1,54 @@
+#socialMedia {
+  display: flex;
+
+  .icon_cont {
+    padding: 2px;
+    margin-right: 10px;
+    position: relative;
+    
+    .copy_svg {
+      width: 25px;
+      display: none;
+      border: 1px solid blue;
+    }
+
+    .anchor_icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid #fa8072;
+      text-decoration: none;
+      transition: all 0.8s;
+      background: linear-gradient(45deg, #8f4dd0, #fa8072, #4dd086);
+
+      .icon {
+        width: 1em;
+        height: 1em;
+        margin: 10px;
+        font-size: 1.5rem;
+        fill: #023b21;
+        transition: all 0.8s;
+      }
+    }
+    :hover {
+      background: linear-gradient(45deg, #e53d00, #fba371);
+      .icon {
+        fill: #fff;
+      }
+    }
+  }
+  :hover {
+    .copy_svg {
+      width: 30px;
+      display: block;
+      position: absolute;
+      top: -22px;
+      right: 0px;
+      padding: 3px;
+    }
+    :hover {
+      fill: #fff;
+    }
+  }
+}

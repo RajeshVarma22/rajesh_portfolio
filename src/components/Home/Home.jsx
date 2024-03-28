@@ -3,25 +3,10 @@ import { motion as m } from "framer-motion";
 import { parentVarints } from "../Animate/parentVarients";
 import myProfile from "../../assets/My Profile.jpeg";
 import Button2 from "../Buttons/Button2";
+import Scoialmedia from "../Utils/Scoialmedia";
 import "./home.scss";
 
 const Home = () => {
-  // const scaleImg = {
-  //   hidden: {
-  //     transform: {
-  //       scale: 0,
-  //     },
-  //   },
-  //   show: {
-  //     transform: {
-  //       scale: 1,
-  //     },
-  //     transition: {
-  //       duration: "2s",
-  //     },
-  //   },
-  // };
-
   return (
     <section id="Home" className="sections container m-4">
       <div id="Name">
@@ -51,15 +36,18 @@ const Home = () => {
           className="childElements"
           whileInView={{ backgroundPosition: "left bottom" }}
         >
-          <m.h3
+          <m.h2
             variants={parentVarints}
             initial="hidden"
             whileInView="show"
             style={{ color: "red" }}
           >
             <Typewriter />
-          </m.h3>
+          </m.h2>
         </m.div>
+        <div id="social_media_container">
+          <Scoialmedia />
+        </div>
         <div className="buttonsContainer">
           <a
             href="https://drive.google.com/file/d/1hUNlHDgRVXF4_RZDdQwGpHHsbFn128iW/view?usp=sharing"
@@ -84,7 +72,7 @@ const Home = () => {
       <div id="myMainImageContainer">
         <m.img
           initial={{ scale: 0.5, y: "50%", x: "30%" }}
-          transition={{ duration: 1, ease: "easeIn" }}
+          transition={{ duration: 1, ease: "linear" }}
           animate={{ scale: 1, y: "0%", x: "0%" }}
           src={myProfile}
           alt="My Profile"

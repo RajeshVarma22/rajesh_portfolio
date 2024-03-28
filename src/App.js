@@ -13,8 +13,8 @@ import { motion as m } from "framer-motion";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [isLoading, setLoading] = useState(true);
-  const [isLoadingBars, setLoadingBars] = useState(true);
+  const [isLoading, setLoading] = useState(false);
+  const [isLoadingBars, setLoadingBars] = useState(false);
 
 
   useEffect(() => {
@@ -26,7 +26,7 @@ function App() {
   
     const setLoadingBarsTimeout = setTimeout(() => {
       setLoading(true);
-    }, 6300);
+    }, 6500);
   
     return () => {
       clearTimeout(setLoadingTimeout);

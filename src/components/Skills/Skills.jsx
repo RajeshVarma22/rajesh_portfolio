@@ -10,7 +10,6 @@ import {
 
 const Skills = () => {
   return (
-
       <section id="Skills">
         <div id="Skills_heading_cont">
           <m.h1

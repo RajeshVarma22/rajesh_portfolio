@@ -149,6 +149,17 @@
   }
 }
 
+@media screen and (min-width: 1022px){
+  #Projectssml{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .projectCard{
+      width: 45%;
+    }
+  }
+}
+
 @media screen and (max-width: 650px) {
   .bg_blur {
     transition: all 2s;

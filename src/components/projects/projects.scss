@@ -18,8 +18,38 @@
 
   #desktop {
     position: relative;
-    height: 90vh;
     width: 100%;
+
+    #view_selector {
+      // float: right;
+      text-align: center;
+      height: 50px;
+      position: sticky;
+      top: 8em;
+      z-index: 222222;
+
+      .btn_layout_selector {
+        float: right;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        background-color: #6119d5;
+        margin: 5px 5px 15px 5px;
+        border-radius: 5px;
+        display: block;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        .view_selector_icon {
+          margin: 5px;
+        }
+      }
+    }
+  }
+
+  .heightAdd {
+    height: 90vh;
   }
 }
 
@@ -33,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1021.9px) {
   #mobile_tablet {
     display: block;
   }

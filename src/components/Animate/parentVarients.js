@@ -13,6 +13,7 @@ export const stagger = {
   show: {
     opacity: 1,
     transition: {
+      delay: 1,
       delayChildren: 0.4,
       staggerChildren: 0.2,
     },
