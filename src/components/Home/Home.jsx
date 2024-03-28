@@ -1,7 +1,7 @@
 import Typewriter from "./Typewriter";
 import { motion as m } from "framer-motion";
 import { parentVarints } from "../Animate/parentVarients";
-import myProfile from "../../assets/My Profile.jpeg";
+import myProfile from "../../assets/Rajesh Passport 1X1.jpg";
 import Button2 from "../Buttons/Button2";
 import Scoialmedia from "../Utils/Scoialmedia";
 import "./home.scss";
